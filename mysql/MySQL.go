@@ -27,6 +27,13 @@ func (d *driver) Connect() (*sql.DB, error) {
 	return d.conn, err
 }
 
+func (d *driver) Close() error {
+	if d.conn == nil {
+		return nil
+	}
+	return d.conn.Close()
+}
+
 func (d *driver) Migrate(files fs.FS, pattern string) error {
 	migrations, err := schema.FSMigrations(files, pattern)
 	if err != nil {
