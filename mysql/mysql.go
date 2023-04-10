@@ -1,4 +1,4 @@
-package MySQL
+package mysql
 
 import (
 	"database/sql"
@@ -7,10 +7,10 @@ import (
 
 	"github.com/adlio/schema"
 	_ "github.com/go-sql-driver/mysql"
-	Database "github.com/mozgio/database"
+	"github.com/mozgio/database"
 )
 
-func Driver(dsn string) Database.Driver[*sql.DB] {
+func Driver(dsn string) database.Driver[*sql.DB] {
 	return &driver{
 		dsn: dsn,
 	}
@@ -37,13 +37,13 @@ func (d *driver) Close() error {
 func (d *driver) Migrate(files fs.FS, pattern string) error {
 	migrations, err := schema.FSMigrations(files, pattern)
 	if err != nil {
-		return errors.Join(err, Database.ErrFailedToReadMigrations)
+		return errors.Join(err, database.ErrFailedToReadMigrations)
 	}
 	opts := []schema.Option{
 		schema.WithDialect(schema.MySQL),
 	}
 	if err = schema.NewMigrator(opts...).Apply(d.conn, migrations); err != nil {
-		return errors.Join(err, Database.ErrFailedToMigrate)
+		return errors.Join(err, database.ErrFailedToMigrate)
 	}
 	return nil
 }

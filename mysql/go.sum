@@ -26,6 +26,8 @@ github.com/mozgio/database v0.0.1 h1:cH9SYiQqPeN/L1OjNPEIrR/RZSdwAi6Obp64AWWIins
 github.com/mozgio/database v0.0.1/go.mod h1:ALIgOt7nibiH0It0A9O/n1eVKL5uZ4F12hZZ4UYWKp0=
 github.com/mozgio/database v0.0.2 h1:4ttBL9A6TyLXBOIusPXgnYG2hGnJOXqtBjjvSGmuDpE=
 github.com/mozgio/database v0.0.2/go.mod h1:ALIgOt7nibiH0It0A9O/n1eVKL5uZ4F12hZZ4UYWKp0=
+github.com/mozgio/database v0.0.3 h1:R0yoxRxZKPzO7gKRpQnD2H0iibfxwG7hrOz1iYUvZ5U=
+github.com/mozgio/database v0.0.3/go.mod h1:ALIgOt7nibiH0It0A9O/n1eVKL5uZ4F12hZZ4UYWKp0=
 github.com/opencontainers/go-digest v1.0.0 h1:apOUWs51W5PlhuyGyz9FCeeBIOUDA/6nW8Oi/yOhh5U=
 github.com/opencontainers/image-spec v1.0.2 h1:9yCKha/T5XdGtO0q9Q9a6T5NUCsTn/DrBg0D7ufOcFM=
 github.com/opencontainers/runc v1.1.3 h1:vIXrkId+0/J2Ymu2m7VjGvbSlAId9XNRPhn2p4b+d8w=
