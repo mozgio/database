@@ -1,0 +1,3 @@
+# database
+
+Simple database library.

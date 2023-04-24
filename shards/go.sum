@@ -1,0 +1,4 @@
+github.com/mozgio/database v0.0.3 h1:R0yoxRxZKPzO7gKRpQnD2H0iibfxwG7hrOz1iYUvZ5U=
+github.com/mozgio/database v0.0.3/go.mod h1:ALIgOt7nibiH0It0A9O/n1eVKL5uZ4F12hZZ4UYWKp0=
+github.com/skamenetskiy/sharding v0.0.2 h1:um2Lyr0CXyi6w17iQ15xvc/XRiD5+5DbE2jWKfsuq8M=
+github.com/skamenetskiy/sharding v0.0.2/go.mod h1:Zk7CSZkIA0KI++mQz6IOjn0TUjO2EfQuZCVmQG/2fDw=
